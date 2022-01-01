@@ -1,0 +1,8 @@
+# Node package
+node_modules
+# docker volumes
+.volumes
+# Mac env file
+.DS_Stores
+# env file
+config.json
