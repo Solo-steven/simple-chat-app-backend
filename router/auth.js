@@ -16,6 +16,34 @@ function verifyPassword(password, salt, passwordHash) {
         return true;
     return false;
 }
+/**
+ * @swagger
+ * paths:
+ *  /auth/login:
+ *    post:
+ *      description: login by email and password
+ *      tags: [auth]
+ *      requestBody:
+ *        content:
+ *          application/json:
+ *            schema:
+ *              type: object
+ *              properties:
+ *                email:
+ *                  type: string
+ *                  description: email of user
+ *                password:
+ *                  type: string
+ *                  description: password of user
+ *      responses:
+ *        200:
+ *          description: login ok with JWT back
+ *        404:
+ *          description: email error, user not found
+ *        402:
+ *          description: password error,
+ *          
+ */
 
 router.post('/login', async( req, res) => {
     const { email, password } = req.body;
@@ -31,7 +59,32 @@ router.post('/login', async( req, res) => {
     }
     return res.status(402).json({ message: "password error" });
 });
-
+/**
+ * @swagger
+ * paths:
+ *  /auth/regitser:
+ *    post:
+ *      description: register a new user.
+ *      tags: [auth]
+ *      requestBody:
+ *        content:
+ *          application/json:
+ *            schema:
+ *              type: object
+ *              properties:
+ *                name:
+ *                 type: string
+ *                email:
+ *                 type: string
+ *                password:
+ *                 type: string
+ *      responses: 
+ *         200:
+ *           description: register successfully
+ *         400:
+ *           description: email already registered or lock of parameters
+ *      
+ */
 router.post("/register", async(req, res) => {
     const {  name,  email,  password } = req.body;
     if(!name ||  !password)
