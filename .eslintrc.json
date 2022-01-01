@@ -5,11 +5,13 @@
         "es2021": true
     },
     "extends": [
-        "standard"
+        "google"
     ],
     "parserOptions": {
-        "ecmaVersion": 13
+        "ecmaVersion": 12
     },
     "rules": {
+        "new-cap": "off",
+        "require-jsdoc":"off"
     }
 }
