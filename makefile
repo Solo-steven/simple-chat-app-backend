@@ -1,4 +1,4 @@
-.PHONY: clean
+.PHONY: clean, reset
 
 CONTAINER_NAME := chat-app-db
 DB_PORT := 3400
@@ -13,5 +13,11 @@ all:
 		mongo
 entry:
 	docker exec -it ${CONTAINER_NAME} /bin/bash
+reset:
+	docker exec  -it ${CONTAINER_NAME} mongoimport \
+		--db=$(DB_NAME) \
+		--collection=messages \
+		--drop \
+		--jsonArray /test/message.json
 clean:
 	docker stop ${CONTAINER_NAME}

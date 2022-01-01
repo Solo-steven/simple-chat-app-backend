@@ -4,8 +4,8 @@ const config = require('../config.json');
 const JWT = require('jsonwebtoken');
 /**
  * @swagger
- * path:
- *  /user
+ * paths:
+ *  /user:
  *   get:
  *    description: get user by JWT cookie
  *    tags: [user]
