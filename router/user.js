@@ -36,7 +36,7 @@ const JWT = require('jsonwebtoken');
  *                          type: string
  */
 router.get('/', async ( req, res) => {
-  const token = req.cookies.token;
+  const token = req.get('Authorization');
   if (!token) {
     return res.status(401).json({message: 'un-auth'});
   }

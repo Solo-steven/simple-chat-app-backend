@@ -40,7 +40,7 @@ router.get('/', async ( req, res) => {
   if (!sender||!reciver) {
     return res.status(400).json({messgae: 'lock of parameters'});
   }
-  const token = req.cookies.token;
+  const token = req.get('Authorization');
   if (!token) {
     return res.status(401).json({message: 'lock of token'});
   }
@@ -50,7 +50,7 @@ router.get('/', async ( req, res) => {
   }
   const fromSender=await messageModel.find({sender, reciver});
   const fromReciver=await messageModel.find({sender: reciver, reciver: sender});
-  const data = [...fromSender, fromReciver];
+  const data = [...fromSender, ...fromReciver];
   res.status(200).json(data);
 });
 

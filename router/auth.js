@@ -55,9 +55,8 @@ router.post('/login', async ( req, res) => {
   }
   const data = datas[0];
   if (verifyPassword( password, data.salt, data.passwordHash)) {
-    const cookie = JWT.sign({email}, config.JWT);
-    res.cookie('token', cookie, {httpOnly: true});
-    return res.status(200).json();
+    const token = JWT.sign({email}, config.JWT);
+    return res.status(200).json({token});
   }
   return res.status(402).json({message: 'password error'});
 });
@@ -106,6 +105,14 @@ router.post('/register', async (req, res) => {
   });
   user.save();
   res.status(200).json({});
+});
+
+router.post('/refresh', async (req, res) => {
+  const token = req.get('Authorization');
+  if (!token) {
+    return res.status(401).json({message: 'un-auth'});
+  }
+  return res.status(200).json({});
 });
 
 

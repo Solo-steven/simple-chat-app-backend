@@ -11,6 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(cors({
   origin: config.test,
+  credentials: true,
 }));
 app.use(cookieParser());
 const openapiDoc = swaggerDoc(config.opneapi);
