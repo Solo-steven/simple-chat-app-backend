@@ -1,0 +1,26 @@
+[
+    { 
+        "name" : "steven",
+        "imgUrl" : null, 
+        "email" : "ssteven19@kimo.com", 
+        "passwordHash" : "be60512c4911bb24eb9afaf9ab1e2f1f3ae8432b99967a1a49525d94b5f965cfaaf245c15aa05b221cbd2cd16ed3da94143b0613051a595dce7700a601769d0f", 
+        "salt" : "c52efc80a53a72813d51a13cbdd2364862aaef61e5358718f49ccf42671730bf", 
+        "friends" : [ "H34081034@ncku.edu.tw", "S10400107@nhsh.edu.tw" ] 
+    },
+    { 
+        "name" : "H34081034", 
+        "imgUrl" : null, 
+        "email" : "H34081034@ncku.edu.tw", 
+        "passwordHash" : "75ef15f0aca1abddf407d29fcc05cf52c24dbb75144c8ad6f39e4de61ba750a9677693e4e3533a6a7344896632766e30d2d07aa159dd1f1e285d77f230fdac95", 
+        "salt" : "42fc5d4ff636c26b684dbbbbe4c50f913de735a65b7f03997f22e748db5dbb20", 
+        "friends" : [ "ssteven19@kimo.com" ]
+    },
+    { 
+        "name" : "S10400107", 
+        "imgUrl" : null, 
+        "email" : "S10400107@nhsh.edu.tw", 
+        "passwordHash" : "9c46850f7f63858e513cb7e3e7c963af7ec9e2e60f0cba10f67267cf14391a3bad0bf4819ad19cc7d3896c1f25a3c96623cf5bd188f27c2547fc58fabdf78818", 
+        "salt" : "ea04279aca0c00a516981c2dc785b85294b57daa33fd53fa6e254e3847ad4120", 
+        "friends" : [ "ssteven19@kimo.com"  ]
+    }
+]

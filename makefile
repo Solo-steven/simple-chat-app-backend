@@ -13,11 +13,20 @@ all:
 		mongo
 entry:
 	docker exec -it ${CONTAINER_NAME} /bin/bash
-reset:
+reset-message:
 	docker exec  -it ${CONTAINER_NAME} mongoimport \
 		--db=$(DB_NAME) \
 		--collection=messages \
 		--drop \
 		--jsonArray /test/message.json
+reset-user:
+	docker exec  -it ${CONTAINER_NAME} mongoimport \
+		--db=$(DB_NAME) \
+		--collection=users \
+		--drop \
+		--jsonArray /test/user.json
+reset: reset-message reset-user
+	echo "Reset DB"
+
 clean:
 	docker stop ${CONTAINER_NAME}
