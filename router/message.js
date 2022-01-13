@@ -48,8 +48,10 @@ router.get('/', async ( req, res) => {
   if (email !== sender) {
     return res.status(403).json({message: 'sender error'});
   }
-  const fromSender=await messageModel.find({sender, reciver});
-  const fromReciver=await messageModel.find({sender: reciver, reciver: sender});
+  const fromSender = await messageModel.find({sender, reciver});
+  const fromReciver = await messageModel.find({
+    sender: reciver, reciver: sender,
+  });
   const data = [...fromSender, ...fromReciver];
   res.status(200).json(data);
 });

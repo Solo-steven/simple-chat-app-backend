@@ -63,5 +63,31 @@ router.get('/', async ( req, res) => {
   }
 });
 
+router.post('/friend', async ( req, res) => {
+  const token = req.get('Authorization');
+  if (!token) {
+    return res.status(401).json({message: 'un-auth'});
+  }
+  try {
+    const {email} = JWT.verify(token, config.JWT );
+    const {friendEmail} = req.body;
+    const user = (await userModel.find({email: email}))[0];
+    if (!user) {
+      return res.status(404).json({message: 'user not find'});
+    }
+    const friend = (await userModel.find({email: friendEmail}))[0];
+    if (!friend) {
+      return res.status(404).json({message: 'friend not find'});
+    }
+    if (user.friends.indexOf(friendEmail)>-1) {
+      return res.status(400).json({message: 'friend already exists'});
+    }
+    user.friends.push(friendEmail);
+    user.save();
+    return res.status(200).json({});
+  } catch (error) {
+    return res.status(401).json({message: 'un-auth'});
+  }
+});
 
 module.exports = router;
