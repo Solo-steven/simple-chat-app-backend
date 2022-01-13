@@ -84,6 +84,8 @@ router.post('/friend', async ( req, res) => {
     }
     user.friends.push(friendEmail);
     user.save();
+    friend.friends.push(email);
+    friend.save();
     return res.status(200).json({});
   } catch (error) {
     return res.status(401).json({message: 'un-auth'});
