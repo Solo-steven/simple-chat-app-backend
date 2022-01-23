@@ -1,136 +1,172 @@
 [
     {
         "content": "哈囉",
-        "sender": "ssteven19@kimo.com",
-        "reciver": "H34081034@ncku.edu.tw",
+        "sender": "steven@email.com",
+        "user1": "lie@email.com",
+        "user2": "steven@email.com",
         "timestamp":"2021-12-31T10:10:00Z"
     },
     {
         "content": "Hi",
-        "sender": "H34081034@ncku.edu.tw",
-        "reciver": "ssteven19@kimo.com",
+        "sender": "lie@email.com",
+        "user1": "lie@email.com",
+        "user2": "steven@email.com",
         "timestamp":"2021-12-31T10:15:00Z"
     },
     {
         "content": "怎麼了嗎",
-        "sender": "H34081034@ncku.edu.tw",
-        "reciver": "ssteven19@kimo.com",
+        "sender": "lie@email.com",
+        "user1": "lie@email.com",
+        "user2": "steven@email.com",
         "timestamp":"2021-12-31T10:16:00Z"
     },
     {
         "content": "沒事",
-        "sender": "ssteven19@kimo.com",
-        "reciver": "H34081034@ncku.edu.tw",
+        "sender": "steven@email.com",
+        "user1": "lie@email.com",
+        "user2": "steven@email.com",
         "timestamp":"2021-12-31T10:17:00Z"
     },
     {
         "content": "只是想測試",
-        "sender": "ssteven19@kimo.com",
-        "reciver": "H34081034@ncku.edu.tw",
+        "sender": "steven@email.com",
+        "user1": "lie@email.com",
+        "user2": "steven@email.com",
         "timestamp":"2021-12-31T10:17:10Z"
     },
     {
         "content": "喔好喔",
-        "sender": "H34081034@ncku.edu.tw",
-        "reciver": "ssteven19@kimo.com",
+        "sender": "lie@email.com",
+        "user1": "lie@email.com",
+        "user2": "steven@email.com",
         "timestamp":"2021-12-31T10:18:00Z"
     },
     {
         "content": "喔對了",
-        "sender": "ssteven19@kimo.com",
-        "reciver": "H34081034@ncku.edu.tw",
+        "sender": "steven@email.com",
+        "user1": "lie@email.com",
+        "user2": "steven@email.com",
         "timestamp":"2021-12-31T10:19:00Z"
     },
     {
         "content": "怎麼了嗎",
-        "sender": "H34081034@ncku.edu.tw",
-        "reciver": "ssteven19@kimo.com",
+        "sender": "lie@email.com",
+        "user1": "lie@email.com",
+        "user2": "steven@email.com",
         "timestamp":"2021-12-31T10:19:25Z"
     },
     {
         "content": "你現在有空嗎",
-        "sender": "ssteven19@kimo.com",
-        "reciver": "H34081034@ncku.edu.tw",
+        "sender": "steven@email.com",
+        "user1": "lie@email.com",
+        "user2": "steven@email.com",
         "timestamp":"2021-12-31T10:19:45Z"
     },
     {
         "content": "沒有ㄟ",
-        "sender": "H34081034@ncku.edu.tw",
-        "reciver": "ssteven19@kimo.com",
+        "sender": "lie@email.com",
+        "user1": "lie@email.com",
+        "user2": "steven@email.com",
         "timestamp":"2021-12-31T10:19:48Z"
     },
     {
         "content": "好吧",
-        "sender": "ssteven19@kimo.com",
-        "reciver": "H34081034@ncku.edu.tw",
+        "sender": "steven@email.com",
+        "user1": "lie@email.com",
+        "user2": "steven@email.com",
         "timestamp":"2021-12-31T10:20:00Z"
+    },
+    {
+        "content": "那請你有空的時候跟我說一下",
+        "sender": "steven@email.com",
+        "user1": "lie@email.com",
+        "user2": "steven@email.com",
+        "timestamp":"2021-12-31T10:20:10Z"
+    },
+    {
+        "content": "可以ㄛ",
+        "sender": "lie@email.com",
+        "user1": "lie@email.com",
+        "user2": "steven@email.com",
+        "timestamp":"2021-12-31T10:20:16Z"
     },
     
 
     {
         "content": "哈囉",
-        "sender": "ssteven19@kimo.com",
-        "reciver": "S10400107@nhsh.edu.tw",
+        "sender": "steven@email.com",
+        "user1": "steven@email.com",
+        "user2": "wang@email.com",
         "timestamp":"2021-12-29T17:18:00Z"
     },
     {
         "content": "怎麼了嗎",
-        "sender": "S10400107@nhsh.edu.tw",
-        "reciver": "ssteven19@kimo.com",
+        "sender": "wang@email.com",
+        "user1": "steven@email.com",
+        "user2": "wang@email.com",
         "timestamp":"2021-12-29T17:20:00Z"
     },
     {
         "content": "Hi",
-        "sender": "S10400107@nhsh.edu.tw",
-        "reciver": "ssteven19@kimo.com",
+        "sender": "wang@email.com",
+        "user1": "steven@email.com",
+        "user2": "wang@email.com",
         "timestamp":"2021-12-29T17:21:00Z"
     },
     {
         "content": "沒事",
-        "sender": "ssteven19@kimo.com",
-        "reciver": "S10400107@nhsh.edu.tw",
+        "sender": "steven@email.com",
+        "user1": "steven@email.com",
+        "user2": "wang@email.com",
         "timestamp":"2021-12-31T10:17:00Z"
     },
     {
         "content": "只是想測試",
-        "sender": "ssteven19@kimo.com",
-        "reciver": "S10400107@nhsh.edu.tw",
+        "sender": "steven@email.com",
+        "user1": "steven@email.com",
+        "user2": "wang@email.com",
         "timestamp":"2021-12-31T10:17:10Z"
     },
     {
         "content": "喔好喔",
-        "sender": "S10400107@nhsh.edu.tw",
-        "reciver": "ssteven19@kimo.com",
+        "sender": "wang@email.com",
+        "user1": "steven@email.com",
+        "user2": "wang@email.com",
         "timestamp":"2021-12-31T10:18:00Z"
     },
     {
         "content": "喔對了",
-        "sender": "ssteven19@kimo.com",
-        "reciver": "S10400107@nhsh.edu.tw",
+        "sender": "steven@email.com",
+        "user1": "steven@email.com",
+        "user2": "wang@email.com",
         "timestamp":"2021-12-31T10:19:00Z"
     },
     {
         "content": "怎麼了嗎",
-        "sender": "S10400107@nhsh.edu.tw",
-        "reciver": "ssteven19@kimo.com",
+        "sender": "wang@email.com",
+        "user1": "steven@email.com",
+        "user2": "wang@email.com",
         "timestamp":"2021-12-31T10:19:25Z"
     },
     {
         "content": "你現在有空嗎",
-        "sender": "ssteven19@kimo.com",
-        "reciver": "S10400107@nhsh.edu.tw",
+        "sender": "steven@email.com",
+        "user1": "steven@email.com",
+        "user2": "wang@email.com",
         "timestamp":"2021-12-31T10:19:45Z"
     },
     {
         "content": "沒有ㄟ",
-        "sender": "S10400107@nhsh.edu.tw",
-        "reciver": "ssteven19@kimo.com",
+        "sender": "wang@email.com",
+        "user1": "steven@email.com",
+        "user2": "wang@email.com",
         "timestamp":"2021-12-31T10:19:48Z"
     },
     {
         "content": "好吧",
-        "sender": "ssteven19@kimo.com",
-        "reciver": "S10400107@nhsh.edu.tw",
+        "sender": "steven@email.com",
+        "user1": "steven@email.com",
+        "user2": "wang@email.com",
         "timestamp":"2021-12-31T10:20:00Z"
     }
 ]
